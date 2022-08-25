@@ -3,35 +3,47 @@
     <title>
         Sign Up Page
     </title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1> Sign Up</h1>
-    <h2> Create an account proceed further..!!</h2>
-    <label for="email"> Email :</label>
-    <input type="text" placeholder="Enter Email" ><br>
-    <lable for="Phone number"> Phone number :</lable>
-    <input type="number" placeholder="Enter your phone number"><br>
-    <label for="Password"> Password :</label>
-    <input type="text" placeholder="Enter your password "><br>
-    <label for="Confirm Password"> Confirm Password :</label>
-    <input type="text" placeholder="Enter your password again"><br>
-    <form>
-        <input type="checkbox" 
-               name="I accept terms and conditions" 
-               value="yes">I accept terms and conditions
-    </form>
-    <form>
-        Do you agree terms and conditions?
-        <br>
-        <input type="radio" 
-               name="Yes" 
-               value="yes">Yes
-        <br>
-        <input type="radio" 
-               name="No" 
-               value="no">No
-        <br>
-    <button type="button">Submit </button>
-
+    <div class="bg">
+        <div class="form_container">
+            <p class="form_header"> Sign Up</p>
+            <form>
+                <table class="input_data">
+                    <tr>
+                        <td>Username :</td>
+                        <td><input type="text" placeholder="Enter username" maxlength="16" minlength="8" required></td>
+                    </tr>
+                    <tr>
+                        <td>E-Mail :</td>
+                        <td><input type="email" placeholder="Enter email" required></td>
+                    </tr>
+                    <tr>
+                        <td>Phone number :</td>
+                        <td><input type="number" placeholder="Enter phone number"  required></td>
+                    </tr>
+                    <tr>
+                        <td>Password :</td>
+                        <td><input type="text" placeholder="Enter password" minlength="8" maxlength="16" required></td>
+                    </tr>
+                    <tr>
+                        <td>Confirm Password :</td>
+                        <td><input type="text" placeholder="Enter Password to confirm" minlength="8" maxlength="16" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> 
+                            <input type="checkbox" 
+                            name="I accept terms and conditions" 
+                            value="yes" required>I accept terms and conditions
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> <br /> <input type="submit" value="SUBMIT"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
